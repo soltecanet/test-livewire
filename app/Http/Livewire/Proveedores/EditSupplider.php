@@ -52,9 +52,12 @@ class EditSupplider extends Component
                                 ->pluck('name', 'id');
     }
 
-public function save() {
-    dd('guadar');
-}
+    public function save() {
+        $this->validate();
+        $this->supplier->save();
+        session()->flash('message','El proveedor fue actualizado exitosamente.');
+        redirect()->route('supplier.index');
+    }
 
 
     public function render()

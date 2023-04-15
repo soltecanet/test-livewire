@@ -44,7 +44,7 @@ class SaveSupplierRequest extends FormRequest
     public function messages()
     {
         return [
-            'supplier.name.required' => 'El Nombre del Proveedor es requerido ----.',
+            'supplier.name.required' => 'El Nombre del Proveedor es requerido.',
             'supplier.direction.required' => 'La dirección es requerida',
             'supplier.region_id.required' => 'requiere Region',
             'supplier.commune_id.required' => 'requiere Comuna',
