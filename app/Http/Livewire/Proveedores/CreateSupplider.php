@@ -15,7 +15,8 @@ class CreateSupplider extends Component
     public $regiones;
     public $comunas;
 
-
+   //hola desde mundo movil
+   
 
     public function mount() {
         $this->supplier = new Supplier;
@@ -54,6 +55,7 @@ class CreateSupplider extends Component
         $this->comunas = Commune::where('region_id', '=', $id)
                                 ->pluck('name', 'id');
     }
+
 
 
     public function render()
